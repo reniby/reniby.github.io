@@ -38,24 +38,24 @@ function setup() {
   image(bg, 0, 0);
   back.resize(50, 0);
   
-  b17 = loadSound('wavs/b17.wav');
-  b18 = loadSound('wavs/b18.wav');
-  b19 = loadSound('wavs/b19.wav');
-  b20 = loadSound('wavs/b20.wav');
-  b21 = loadSound('wavs/b21.wav');
-  b22 = loadSound('wavs/b22.wav');
-  b23 = loadSound('wavs/b23.wav');
-  b24 = loadSound('wavs/b24.wav');
+  b17 = loadSound('wavs/b17.mp3');
+  b18 = loadSound('wavs/b18.mp3');
+  b19 = loadSound('wavs/b19.mp3');
+  b20 = loadSound('wavs/b20.mp3');
+  b21 = loadSound('wavs/b21.mp3');
+  b22 = loadSound('wavs/b22.mp3');
+  b23 = loadSound('wavs/b23.mp3');
+  b24 = loadSound('wavs/b24.mp3');
   bw = [b17, b18, b19, b20, b21, b22, b23, b24]
   
-  h17 = loadSound('wavs/h17.wav');
-  h19 = loadSound('wavs/h19.wav');
-  h21 = loadSound('wavs/h21.wav');
-  h23 = loadSound('wavs/h23.wav');
-  h25 = loadSound('wavs/h25.wav');
-  h27 = loadSound('wavs/h27.wav');
-  h29 = loadSound('wavs/h29.wav');
-  h31 = loadSound('wavs/h31.wav');
+  h17 = loadSound('wavs/h17.mp3');
+  h19 = loadSound('wavs/h19.mp3');
+  h21 = loadSound('wavs/h21.mp3');
+  h23 = loadSound('wavs/h23.mp3');
+  h25 = loadSound('wavs/h25.mp3');
+  h27 = loadSound('wavs/h27.mp3');
+  h29 = loadSound('wavs/h29.mp3');
+  h31 = loadSound('wavs/h31.mp3');
   hw = [h17, h19, h21, h23, h25, h27, h29, h31]
   
 }
