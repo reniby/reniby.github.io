@@ -13,7 +13,7 @@ class Boid {
   }
 
   edges() {
-    if (this.position.x > width - pad || this.position.x < pad || this.position.y > height || this.position.y < 0) {
+    if (this.position.x > width - (pad+width/10) || this.position.x < (pad+width/10) || this.position.y < windowHeight/20 || this.position.y > windowHeight/1.4) {
       this.velocity = this.velocity.mult(-1);
     }
   }
