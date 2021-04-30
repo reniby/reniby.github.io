@@ -68,8 +68,8 @@ function setup() {
   feedbackDelay = new Tone.FeedbackDelay("4n", 0.5).toMaster();
   tom = new Tone.DuoSynth().connect(feedbackDelay); //duo, poly
   
-  for (let i = 0; i < 50; i++) {
-    if (i % 10 == 0)
+  for (let i = 0; i < 20; i++) {
+    if (i % 20 == 0)
       flock.push(new Boid(1));
     else
       flock.push(new Boid(0));
@@ -175,44 +175,7 @@ function draw() {
   ///////////////////////////
   
   
-  for (let i = 0; i < flock.length; i++) {    
-    let boid = flock[i];
-    let freq = boid.position.y;
-
-    if (boid.type == 1 && bool == 0) {
-      //let freq = height - boid.position.y + 100;   
-      scale = [168.814, 184.997, 207.652, 220, 246.942, 277.183, 311.127, 329.628].map(function(x) { return x + 0 });
-      if (freq < 100)
-        freq = scale[7];
-      else if (freq < 200)
-        freq = scale[6];
-      else if (freq < 300)
-        freq = scale[5];
-      else if (freq < 400)
-        freq = scale[4];
-      else if (freq < 500)
-        freq = scale[3];
-      else if (freq < 600)
-        freq = scale[2];
-      else if (freq < 700)
-        freq = scale[1];
-      else
-        freq = scale[0];
-
-      //synth.triggerAttackRelease(freq, "8n");
-      tom.triggerAttackRelease(freq, "16n");
-    }  
-    
-    bool++;
-    
-    if (bool > feed)//.value())
-      bool = 0;
-    
-    boid.edges();
-    boid.flock(flock, bb);
-    boid.update();
-    boid.show(); 
-  }  
+  slow()
   
   
   stroke('black');
@@ -426,6 +389,47 @@ function draw() {
   else
     bb.leader = 0
   
+}
+
+function slow() {
+  for (let i = 0; i < flock.length; i++) {    
+    let boid = flock[i];
+    let freq = boid.position.y;
+
+     if (boid.type == 1 && bool == 0) {
+      //let freq = height - boid.position.y + 100;   
+      scale = [168.814, 184.997, 207.652, 220, 246.942, 277.183, 311.127, 329.628].map(function(x) { return x + 0 });
+      if (freq < 100)
+        freq = scale[7];
+      else if (freq < 200)
+        freq = scale[6];
+      else if (freq < 300)
+        freq = scale[5];
+      else if (freq < 400)
+        freq = scale[4];
+      else if (freq < 500)
+        freq = scale[3];
+      else if (freq < 600)
+        freq = scale[2];
+      else if (freq < 700)
+        freq = scale[1];
+      else
+        freq = scale[0];
+
+      //synth.triggerAttackRelease(freq, "8n");
+      tom.triggerAttackRelease(freq, "16n");
+    } 
+    
+    bool++;
+    
+    if (bool > feed)//.value())
+      bool = 0;
+    
+    boid.edges();
+    boid.flock(flock, bb);
+    boid.update();
+    boid.show(); 
+  }  
 }
 
 function mouseClicked() {
