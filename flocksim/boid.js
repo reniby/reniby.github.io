@@ -3,7 +3,7 @@ let pad = 350;
 
 class Boid {
   constructor(t) {
-    this.position = createVector(random(pad, width-pad), random(height));
+    this.position = createVector(random((pad+width/10), width - (pad+width/10)), random(windowHeight/20, windowHeight/1.4));
     this.velocity = p5.Vector.random2D();
     this.velocity.setMag(random(0, 1));
     this.acceleration = createVector();
