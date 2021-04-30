@@ -138,7 +138,7 @@ function draw() {
   textAlign(LEFT);
   text('Alignment', windowWidth-320+windowWidth/25, windowHeight/11+50);
   text('Cohesion', windowWidth-320+windowWidth/25, windowHeight/11*2.2+60);
-  text('Seperation', windowWidth-320+windowWidth/25, windowHeight/11*3.4+70);
+  text('Separation', windowWidth-320+windowWidth/25, windowHeight/11*3.4+70);
   
   textSize(20);
   fill('white');
