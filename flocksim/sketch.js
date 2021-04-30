@@ -58,14 +58,17 @@ function setup() {
   cohesionSlider = createSlider(0, 2, 1, 0.1);
   separationSlider = createSlider(0, 2, 2, 0.1);
   
-  alignSlider.position(windowWidth-350+windowWidth/20, windowHeight/10); 
+  alignSlider.position(windowWidth-350+windowWidth/20, windowHeight/10);
+  alignSlider.size(windowWidth/15, 10);
   cohesionSlider.position(windowWidth-350+windowWidth/20, windowHeight/10*2.2);
+  cohesionSlider.size(windowWidth/15, 10);
   separationSlider.position(windowWidth-350+windowWidth/20, windowHeight/10*3.4);
+  separationSlider.size(windowWidth/15, 10);
   
   feedbackDelay = new Tone.FeedbackDelay("4n", 0.5).toMaster();
   tom = new Tone.DuoSynth().connect(feedbackDelay); //duo, poly
   
-  for (let i = 0; i < 200; i++) {
+  for (let i = 0; i < 50; i++) {
     if (i % 20 == 0)
       flock.push(new Boid(1));
     else
@@ -118,12 +121,12 @@ function setup() {
 function draw() {
   fill(220);
   image(bg, 0, 0)
-  rect(350, 0, windowWidth-700, windowHeight);
+  rect(350+(windowWidth/10), windowHeight/20, (windowWidth-700-windowWidth/5), windowHeight/1.5);
   
   
   rect(windowWidth-350+windowWidth/25, windowHeight/11, windowWidth/10, windowHeight/2.8);
   
-  rect(35, windowHeight/1.55, 350-70, windowHeight/10);
+  rect(35, windowHeight/1.55, windowWidth/5, windowHeight/10);
   fill('black');
   text('Play notes to "lead" the flock!', 50, windowHeight/1.46);
   text('Your note will be a blue boid', 50, windowHeight/1.39);
@@ -154,7 +157,7 @@ function draw() {
   var corrBuff = autoCorrelate(timeDomain);
   
   let vol = source.getLevel();
-  let xaxis = map(vol, 0, 1, 0, width*2 + 50);
+  let xaxis = map(vol, 0, 1, 350+width/5, width-350-width/10);
   
 
   var ffreq = findFrequency(corrBuff);
@@ -411,13 +414,13 @@ function draw() {
   for (let i = 0; i < 12; i++){
      if (notes[i].isPlaying()){
        playing[i]++;
-       bb.position.x =  (windowWidth/2 - (windowWidth-700)/4 + xaxis)/2.2 + windowWidth/16;
-       bb.position.y = windowHeight - (windowHeight/12 * i + windowHeight/24);
+       bb.position.x = (windowWidth/2 - (windowWidth-700)/4 + xaxis)/2.2 + windowWidth/16;
+       bb.position.y = windowWidth/3.5 - (i * windowWidth/50);
        bb.leader = 1;
        temptest = true;
      }
   }
-    //print(bb.leader)
+  
   if (temptest)
     bb.leader = 1
   else
