@@ -69,7 +69,7 @@ function setup() {
   tom = new Tone.DuoSynth().connect(feedbackDelay); //duo, poly
   
   for (let i = 0; i < 50; i++) {
-    if (i % 20 == 0)
+    if (i % 10 == 0)
       flock.push(new Boid(1));
     else
       flock.push(new Boid(0));
