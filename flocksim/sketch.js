@@ -68,7 +68,7 @@ function setup() {
   feedbackDelay = new Tone.FeedbackDelay("4n", 0.5).toMaster();
   tom = new Tone.DuoSynth().connect(feedbackDelay); //duo, poly
   
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < 100; i++) {
     if (i % 20 == 0)
       flock.push(new Boid(1));
     else
