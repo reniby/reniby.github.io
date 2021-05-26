@@ -129,7 +129,7 @@ function draw() {
     fill('black');
     textSize(20);
     textStyle(NORMAL);
-    text("Bird \s have twice as many neurons as humans in their frontal lobe, but the neurons are simpler and less varied compared to a human brain. For this piece, I had a computer compose two parts, one human line which had neurons (phrases) that are two measures long, with high rhythmic complexity and a large range of pitches. The other line has 1 measure phrases, with low rhythmic complexity and a very constrained range of pitches. View the images for examples, each \"neuron\" is contained in a red box.\n", 400, 100, windowWidth-800, windowHeight-200);
+    text("Bird\'s have twice as many neurons as humans in their frontal lobe, but the neurons are simpler and less varied compared to a human brain. For this piece, I had a computer compose two parts, one human line which had neurons (phrases) that are two measures long, with high rhythmic complexity and a large range of pitches. The other line has 1 measure phrases, with low rhythmic complexity and a very constrained range of pitches. View the images for examples, each \"neuron\" is contained in a red box.\n", 400, 100, windowWidth-800, windowHeight-200);
     
     textStyle(BOLD);
     text("4 Bird neurons:", 400, 300, windowWidth-800, windowHeight-200); 
