@@ -142,7 +142,6 @@ function draw() {
     text("In the algorithm I wrote, 5% of the boids make noise, or “sing” in succession. The canvas they fly around in goes from soft to loud on the x axis (horizontally), and low to high pitch on the y axis (vertically). It also takes in audio, and maps the pitch and volume of the input to the canvas. The boids will flock towards the audio input which can steer the tune of the synth. The parameters can also be adjusted to change how the synth will evolve.", 400, 400, windowWidth-800, windowHeight-200);
     text("Try out the simulation to see this in action.\n", 400, 580, windowWidth-800, windowHeight-200);
     tint(255, 255); 
-    image(boids, 500, 620);
   }
   
   
