@@ -140,9 +140,6 @@ function draw() {
     textStyle(NORMAL);
     text("Since cowbird nestlings are louder and larger, they will get fed first. Less food means more songbirds nestlings will not survive, while more food will cancel out the negative effects of parasitization.  \n", 400, 440, windowWidth-800, windowHeight-200);
     text("Changing these parameters will change how these birds evolve throughout the simulation. Each generation of birds will have offspring with their parents genes. Only those birds that survive will carry on their genes, simulating natural selection.", 400, 540, windowWidth-800, windowHeight-200);
-    text("Try out the simulation to see this in action.\n", 400, 680, windowWidth-800, windowHeight-200);
-    tint(255, 255); 
-    image(eggs, 820, 620);
   }
   
   
