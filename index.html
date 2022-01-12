@@ -30,11 +30,11 @@
 			</ul>    
 			<div id="myDropdown" class="dropdown-content">
 				<a href="#top">Home</a>
-				<a href="#about">About</a>
-				<a href="#cmr">Computer Music Research</a>
-				<a href="#csr">Computer Science Research</a>
-				<a href="#lp">Live Performances</a>
-				<a href="#con">Contact</a>
+				<a href="#About">About</a>
+				<a href="#Computer-Music">Computer Music Research</a>
+				<a href="#Computer-Science">Computer Science Research</a>
+				<a href="#Live-Performances">Live Performances</a>
+				<a href="#Contact">Contact</a>
 			</div>
 
             <!-- /.navbar-collapse -->
@@ -44,7 +44,7 @@
 	
 	
 	<!-- Header -->
-    <div class="intro-header" id="home" style="height: 100%; overflow: hidden;">
+    <div class="intro-header" style="height: 100%; overflow: hidden;">
 
         <div class="container">
 
@@ -52,7 +52,7 @@
 				<h1>Emma Waddell</h1>
 				<h3>Computer Musician · Computer Scientist · Saxophonist</h3>
 				<hr class="intro-divider">
-				<button class="btn" onClick="document.getElementById('about').scrollIntoView();" >Enter Portfolio</button>
+				<button class="btn" onClick="document.getElementById('About').scrollIntoView();" >Enter Portfolio</button>
 			</div>
 
         </div>
@@ -60,7 +60,7 @@
 
     </div>
 	
-	<div class="content-section-a" id="about">
+	<div class="content-section-a" id="About">
 
         <div class="container">
 
@@ -89,7 +89,7 @@
     </div>
 	
 	
-	<div class="content-section-b" style="overflow: hidden;" id="cmr">
+	<div class="content-section-b" style="overflow: hidden;" id="Computer-Music">
 
 
         <!-- /.container -->
@@ -103,7 +103,7 @@
             <div class="col-md-12">
                 <div style="height: 200px; overflow: visible; position: relative;">
 
-                    <img src="images/05.jpg" class="img-responsive hidden-xs" align="left" style="top: 10%; width: 13%; overflow: hidden; border-radius: 50%">
+                    <img src="images/bird.jpg" class="img-responsive hidden-xs" align="left" style="top: 10%; width: 13%; overflow: hidden; border-radius: 50%">
                     <h2 style="left: 4%; width: 80%; overflow: hidden; position: relative; font-size: 150%;">Bird Ring</h2>
                     <p style="left: 4%; width: 80%; overflow: hidden; position: relative;">
 Composed an album of algorithmic music based on ornithological data, using <span style="color:#f62459;">Java</span>, <span style="color:#f62459;">Max/MSP</span>, and <span style="color:#f62459;">p5.js</span>. 
@@ -121,7 +121,7 @@ This project was initially funded by the NYU Gallatin Undergraduate Research Fun
             <div class="col-md-12">
                 <div style="height: 200px; overflow: visible; position: relative;">
 
-                    <img src="images/05.jpg" class="img-responsive hidden-xs" align="left" style="top: 10%; width: 13%; overflow: hidden; border-radius: 50%">
+                    <img src="images/correst.jpg" class="img-responsive hidden-xs" align="left" style="top: 10%; width: 13%; overflow: hidden; border-radius: 50%">
                     <h2 style="left: 4%; width: 80%; overflow: hidden; position: relative; font-size: 150%;">Creative Neural Networks</h2>
                     <p style="left: 4%; width: 80%; overflow: hidden; position: relative;">Created a procedurally generated platformer game in <span style="color:#f62459;">Unity</span>. User inputs and choices are fed into
 a creative neural network in <span style="color:#f62459;">Pure Data</span> which generates a live soundtrack for the game that evolves as more user data is sent in. 
@@ -140,7 +140,7 @@ This project was funded by the NYU Gallatin Dean's Award for Summer Research, an
             <div class="col-md-12">
                 <div style="height: 200px; overflow: visible; position: relative;">
 
-                    <img src="images/05.jpg" class="img-responsive hidden-xs" align="left" style="top: 10%; width: 13%; overflow: hidden; border-radius: 50%">
+                    <img src="images/write.jpg" class="img-responsive hidden-xs" align="left" style="top: 10%; width: 13%; overflow: hidden; border-radius: 50%">
                     <h2 style="left: 4%; width: 80%; overflow: hidden; position: relative; font-size: 150%;">Essay on Experimental Composition · Coming Soon!</h2>
                     <p style="left: 4%; width: 80%; overflow: hidden; position: relative;">
 An essay comparing the compositional styles and choices in Igor Stravinsky’s The Rite of Spring and Gertrude Stein’s Tender Buttons. To be published in Spring 2022. Check back for more information!
@@ -154,7 +154,7 @@ An essay comparing the compositional styles and choices in Igor Stravinsky’s T
 	
 	
 	
-	<div class="content-section-a" style="overflow: hidden" id="csr">
+	<div class="content-section-a" style="overflow: hidden" id="Computer-Science">
 
 
         <!-- /.container -->
@@ -168,18 +168,18 @@ An essay comparing the compositional styles and choices in Igor Stravinsky’s T
             <div class="col-md-12">
                 <div style="height: 200px; overflow: visible; position: relative;">
 
-                    <img src="images/05.jpg" class="img-responsive hidden-xs" align="left" style="top: 10%; width: 13%; overflow: hidden; border-radius: 50%">
+                    <img src="images/comp.jpg" class="img-responsive hidden-xs" align="left" style="top: 10%; width: 13%; overflow: hidden; border-radius: 50%">
                     <h2 style="left: 4%; width: 80%; overflow: hidden; position: relative; font-size: 150%;">Extractive Summarization</h2>
                     <p style="left: 4%; width: 80%; overflow: hidden; position: relative;">
-Built an extratctive summarizer using <span style="color:#f62459;">Python</span>, evaluated on ROGUE-1 and ROUGE-L scores. Used the Critical Role Dungeons and Dragons Dataset (CRD3), colleced from 398,682 turns, to
+Built an extractive summarizer using <span style="color:#f62459;">Python</span> and <span style="color:#f62459;">NLTK</span>, evaluated on ROGUE-1 and ROUGE-L scores. Used the Critical Role Dungeons and Dragons Dataset (CRD3), colleced from 398,682 turns, to
 generate consice summaries of episodes or shorter scenes. 
-In addition, we utilized an Ad-Hoc
+Utilized an Ad-Hoc
 Information Retrieval system using
 TF-IDF weights and cosine similarity
-score that generated sentences that assist
+score that generated sentences to assist
 Dungeon and Dragons 5th Edition
 world-building and narrative creation,
-based on a defined series of user queries.					
+based on a defined series of user queries.		
 					</p>
                     <a href="es.pdf" target="_blank" rel="noopener noreferrer" class="btn" title="See more" style="top: -10%; width: 12%; overflow: hidden; left: 4%; position: relative;">Paper »</a>
 					<a href="https://github.com/reniby/Extractive-Summarizer" target="_blank" rel="noopener noreferrer" class="btn" title="See more" style="top: -10%; width: 12%; overflow: hidden; left: 6%; position: relative;">Github »</a>
@@ -192,7 +192,7 @@ based on a defined series of user queries.
             <div class="col-md-12">
                 <div style="height: 200px; overflow: visible; position: relative;">
 
-                    <img src="images/05.jpg" class="img-responsive hidden-xs" align="left" style="top: 10%; width: 13%; overflow: hidden; border-radius: 50%">
+                    <img src="images/hh.jpg" class="img-responsive hidden-xs" align="left" style="top: 10%; width: 13%; overflow: hidden; border-radius: 50%">
                     <h2 style="left: 4%; width: 80%; overflow: hidden; position: relative; font-size: 150%;">Comparing the Hodgkin Huxley and
 Traub Neuron Model in MATLAB</h2>
                     <p style="left: 4%; width: 80%; overflow: hidden; position: relative;">
@@ -208,7 +208,7 @@ Used <span style="color:#f62459;">MATLAB</span> to apply a sustained stimulus at
         <!-- /.content-section-b -->
 	</div>
 	
-	<div class="content-section-b" style="overflow: hidden" id="lp">
+	<div class="content-section-b" style="overflow: hidden" id="Live-Performances">
 
 
         <!-- /.container -->
@@ -222,10 +222,14 @@ Used <span style="color:#f62459;">MATLAB</span> to apply a sustained stimulus at
             <div class="col-md-12">
                 <div style="height: 200px; overflow: visible; position: relative;">
 
-                    <img src="images/05.jpg" class="img-responsive hidden-xs" align="left" style="top: 10%; width: 13%; overflow: hidden; border-radius: 50%">
+                    <img src="images/c1.png" class="img-responsive hidden-xs" align="left" style="top: 10%; width: 13%; overflow: hidden; border-radius: 50%">
                     <h2 style="left: 4%; width: 80%; overflow: hidden; position: relative; font-size: 150%;">Ctrl 0 · 2019</h2>
-                    <p style="left: 4%; width: 80%; overflow: hidden; position: relative;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
+                    <p style="left: 4%; width: 80%; overflow: hidden; position: relative;">
+This piece was performed at ShapeShifter Lab in Brooklyn in 2019. Emma wrote a <span style="color:#f62459;">Processing (Java)</span> program using the concepts of conduction created by Butch Morris. 
+The program conducted live improvisation of a trio of tenor sax, guitar, and accordion. 
+Generated visuals included moving circles, and the density, color, and movement style of these circles directed the style and genre of the instrumentalists' improvisation.
+					
+					</p>
                     <a href="https://www.youtube.com/watch?v=gfpNdYSXnks" target="_blank" rel="noopener noreferrer" class="btn" title="See more" style="top: -10%; width: 12%; overflow: hidden; left: 4%; position: relative;">Watch »</a>
 					<a href="https://github.com/reniby/Ctrl-O" target="_blank" rel="noopener noreferrer" class="btn" title="See more" style="top: -10%; width: 12%; overflow: hidden; left: 6%; position: relative;">Github »</a>
                 </div>
@@ -236,10 +240,13 @@ Used <span style="color:#f62459;">MATLAB</span> to apply a sustained stimulus at
             <div class="col-md-12">
                 <div style="height: 200px; overflow: visible; position: relative;">
 
-                    <img src="images/05.jpg" class="img-responsive hidden-xs" align="left" style="top: 10%; width: 13%; overflow: hidden; border-radius: 50%">
+                    <img src="images/jazz.jpg" class="img-responsive hidden-xs" align="left" style="top: 10%; width: 13%; overflow: hidden; border-radius: 50%">
                     <h2 style="left: 4%; width: 80%; overflow: hidden; position: relative; font-size: 150%;">Hartford Jazz Society Emerging Artist Showcase · 2020</h2>
-                    <p style="left: 4%; width: 80%; overflow: hidden; position: relative;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
+                    <p style="left: 4%; width: 80%; overflow: hidden; position: relative;">
+This video is a collaboration with composer Sawyer Adler. Emma played a improvisatory jazz solo on this piece, and submittd the video to the Hartford Jazz Society Emerging Artist Showcase. 
+Through community voting they were selected as a finalist for this competition and received the honor of performing live in Bushnell Park in Hartford for 
+their annual Paul Brown Monday Night Jazz series.
+					</p>
                     <a href="https://www.youtube.com/watch?v=HOv8VBIDJyc" target="_blank" rel="noopener noreferrer" class="btn" title="See more" style="top: -10%; width: 12%; overflow: hidden; left: 4%; position: relative;">Watch »</a>
 					<a href="http://hartfordjazzsociety.com/emerging-jazz-artist-showcase-finals/" target="_blank" rel="noopener noreferrer" class="btn" title="See more" style="top: -10%; width: 12%; overflow: hidden; left: 6%; position: relative;">Showcase »</a>
                 </div>
@@ -250,10 +257,13 @@ Used <span style="color:#f62459;">MATLAB</span> to apply a sustained stimulus at
             <div class="col-md-12">
                 <div style="height: 200px; overflow: visible; position: relative;">
 
-                    <img src="images/05.jpg" class="img-responsive hidden-xs" align="left" style="top: 10%; width: 13%; overflow: hidden; border-radius: 50%">
+                    <img src="images/e1.jpg" class="img-responsive hidden-xs" align="left" style="top: 10%; width: 13%; overflow: hidden; border-radius: 50%">
                     <h2 style="left: 4%; width: 80%; overflow: hidden; position: relative; font-size: 150%;">Ultraviolet Live · 2020</h2>
-                    <p style="left: 4%; width: 80%; overflow: hidden; position: relative;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
+                    <p style="left: 4%; width: 80%; overflow: hidden; position: relative;">
+Ultraviolet Live is an annual NYU wide competition, with a celebrity panel of judges. Emma's group won the grand prize for their performance in 2020. Washington Square News wrote
+this about their performance and Emma's tenor saxophone solo: 
+"Ryan Jamaal Swain commended the 'genuine respect between each and every one' of the musicians involved, highlighting the 'kick-ss saxophone solo' that made the crowd erupt in applause."	
+					</p>
                     <a href="https://www.youtube.com/watch?v=L7i3wQhuqyE" target="_blank" rel="noopener noreferrer" class="btn" title="See more" style="top: -10%; width: 12%; overflow: hidden; left: 4%; position: relative;">Watch »</a>
 					<a href="https://nyunews.com/arts/music/2020/02/25/ultra-violet-live/" target="_blank" rel="noopener noreferrer" class="btn" title="See more" style="top: -10%; width: 12%; overflow: hidden; left: 6%; position: relative;">WSN Article »</a>
                 </div>
@@ -263,7 +273,7 @@ Used <span style="color:#f62459;">MATLAB</span> to apply a sustained stimulus at
 	</div>
 	
 	
-	<div class="banner" id="con">
+	<div class="banner" id="Contact">
 
 		<div class="container">
 
