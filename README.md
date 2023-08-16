@@ -3,4 +3,4 @@ Contains 3 main pages: a page on flocking, a page on nest parasitization, and a 
 
 I recommend you view in full screen, Windows= Fn+F11, Mac= Command-Control-F
 
-View Website: https://emmawaddell.com/Bird-Ring-Studio/index/index.html
+View Website: https://reniby.github.io/index/index.html
